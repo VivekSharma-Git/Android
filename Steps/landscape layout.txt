@@ -1,0 +1,11 @@
+1. In activity_main.xml click on Orientation in editor option.
+2. Select create a landscape orientation.
+3. This creates a lanscape orientation.
+4. To make it scrollable go to the text amd wrap it inside the scroll view.
+    i.e. <ScrollView
+5. Remember to close the tags for both scroll view and constarin layout else it wii not be successful build.
+
+To Delete Landscape
+
+1. Change to project view
+2. Delete the folder layout-land in res.

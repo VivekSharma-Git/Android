@@ -1,0 +1,16 @@
+1.  SharedPreferences sharedPref = getSharedPreferences("mypref",Context.MODE_PRIVATE);
+    
+     Here mypref is the name of the shared preference
+
+2.   // get shared preference data that is committed
+
+        if(sharedPref.contains("keyname")){
+            cityName = sharedPref.getString("keyname","default value");
+            
+        }
+
+3.    SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putString("keyname",value);
+        editor.commit();
+
+4.    Remember to commit.

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.viveksharma.weather">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_my"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_my"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- Splash screen -->
+        <!-- Remem ber while adding splash remove intent filter from main activity so there is one launcher else we will have 2 icons for app -->
+        <activity
+            android:name="com.example.viveksharma.weather.SplashScreen"
+            android:label="@string/app_name"
+
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- About Screen -->
+        <activity
+            android:name="com.example.viveksharma.weather.About" >
+        </activity>
+        <!-- Main Activity -->
+        <activity android:name=".MainActivity">
+
+        </activity>
+    </application>
+
+</manifest>

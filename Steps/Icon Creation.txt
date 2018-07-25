@@ -1,0 +1,6 @@
+1. https://romannurik.github.io/AndroidAssetStudio/icons-launcher.html
+  Go to this website.
+
+2. Downlad and copy res folder to res location in project.
+
+3. change the default name while creating icon if changes are not reflected.

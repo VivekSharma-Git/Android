@@ -1,0 +1,38 @@
+1. add this to activity_main.xml
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+</android.support.v4.widget.DrawerLayout>
+
+
+2. in the list view add this property
+ android:layout_gravity="start" />
+ change background color to black.
+
+e.g.
+ <ListView
+        android:id="@+id/drawerlistview"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#FF333333"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" />
+
+
+3. Make Drawerlistitem.xml with only text view remember there is no constraint layout
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#000"
+    android:gravity="center_vertical"
+    android:minHeight="?android:attr/listPreferredItemHeightSmall"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:textAppearance="?android:attr/textAppearanceListItemSmall"
+    android:textColor="#FFFFFFFF" />
+
+

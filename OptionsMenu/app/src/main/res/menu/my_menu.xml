@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/about"
+        android:title="About" />
+    <item
+        android:id="@+id/item1"
+        android:title="test item" />
+    <item
+        android:id="@+id/item2"
+        android:title="test item2" />
+    <item
+        android:id="@+id/help"
+        android:icon="@android:drawable/ic_menu_help"
+        android:title="help"
+        app:showAsAction="always" />
+</menu>
